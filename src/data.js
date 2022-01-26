@@ -64,7 +64,58 @@ export const traditionalCourses = [
   },
 ]
 
-export const skills = []
+export const skills = [
+  {
+    level: 'Proficient',
+    description:
+      // eslint-disable-next-line quotes
+      "Technologies I've worked with extensively and I'm still working with today",
+    topics: [
+      'JavaScript',
+      'Vue',
+      'Node.js',
+      'Express',
+      'SQL',
+      'HTML',
+      'REST',
+      'CSS',
+      'Git',
+    ],
+  },
+  {
+    level: 'Good',
+    description:
+      // eslint-disable-next-line quotes
+      "Technologies I'm currently working with, but I don't feel proficient yet",
+    topics: [
+      'Docker',
+      'MongoDB',
+      'TypeScript',
+      'AWS (S3, Serverless, EC2)',
+      'SCSS',
+      'Prisma',
+      'TailwindCSS',
+      'GitHub Actions',
+    ],
+  },
+  {
+    level: 'Average',
+    description:
+      // eslint-disable-next-line quotes
+      "Technologies I've worked with in the past, but ended up losing practice",
+    topics: [
+      'Python',
+      'T-SQL',
+      'PL/SQL',
+      'Electron',
+      'Android SDK',
+      'Machine Learning',
+      'Java',
+      'Clojure',
+      'Datomic',
+    ],
+  },
+]
 
 export const sideProjects = [
   {

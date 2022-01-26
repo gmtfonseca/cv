@@ -129,26 +129,23 @@
             <h2 class="section-header">SKILLS_</h2>
           </div>
 
-          <p class="ml-1">Ascending by proficiency level (lower is better)</p>
-
-          <ul class="ml-1">
-            <li>
-              <span class="intro">Paradigms:</span> Object-oriented programming
-              (OOP), Functional programming (FP)
-            </li>
-            <li>
-              <span class="intro">Languages:</span> JavaScript, TypeScript,
-              HTML, CSS, SCSS, MongoDB, SQL, PL/SQL, T-SQL, Dart, Python 3, Java
-            </li>
-            <li>
-              <span class="intro">Frameworks/Libraries:</span> Vue 2 & 3,
-              Express, Node.js, Mongoose, TailwindCSS, Jest, Prisma, Flutter
-            </li>
-            <li>
-              <span class="intro">Others:</span> AWS, REST, SCRUM, Docker, JWT
-              Auth, TDD, Single Page Applications, Git, Github
-            </li>
-          </ul>
+          <div class="space-y-2">
+            <div v-for="skill in skills" :key="skill" class="space-y-1">
+              <h3 class="font-semibold">{{ skill.level }}</h3>
+              <p class="text-xs">
+                {{ skill.description }}
+              </p>
+              <div class="flex flex-wrap gap-2 mt-1 w-96">
+                <div
+                  v-for="topic in skill.topics"
+                  :key="topic"
+                  class="px-2 py-2 text-xs font-semibold text-white bg-gray-600 rounded"
+                >
+                  {{ topic }}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div>
@@ -178,50 +175,14 @@
           </div>
 
           <ul class="ml-1">
-            <li>
-              <a
-                class="highlight"
-                href="https://aw.certmetrics.com/amazon/public/verification.aspx"
-                target="_blank"
-                >Amazon Web Services Developer - Associate</a
-              >
-              - Amazon, Credential ID: QWJ4ES7JC11EQ7GM
-            </li>
-            <li>
-              <a
-                class="highlight"
-                href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
-                target="_blank"
-                >CS50: Introduction to Computer Science</a
-              >
-              - David Malan, Harvard University
-            </li>
-            <li>
-              <a
-                class="highlight"
-                href="https://www.coursera.org/learn/machine-learning"
-                target="_blank"
-                >Machine Learning
+            <li
+              v-for="onlineCourse in onlineCourses"
+              :key="onlineCourse.course"
+            >
+              <a class="font-semibold" :href="onlineCourse.url" target="_blank"
+                >{{ onlineCourse.course }}
               </a>
-              - Andrew Ng, Stanford University
-            </li>
-            <li>
-              <a
-                class="highlight"
-                href="https://appliedaicourse.com/"
-                target="_blank"
-                >AI and Machine Learning
-              </a>
-              - AppliedAI
-            </li>
-            <li>
-              <a
-                class="highlight"
-                href="https://learning.edx.org/course/course-v1:Microsoft+DAT256x+1T2019a/home"
-                target="_blank"
-                >Essential Math for Machine Learning</a
-              >
-              - Microsoft
+              <span> - {{ onlineCourse.institution }}</span>
             </li>
           </ul>
         </div>
