@@ -6,7 +6,7 @@
 
 
 .contact-item {
-  @apply flex items-center space-x-2 text-gray-600;
+  @apply flex items-center space-x-2 text-gray-800;
 }
 
 .contact-icon {
@@ -18,23 +18,23 @@
 }
 
 .social-icon {
-  @apply w-6 h-auto text-gray-600 fill-current;
+  @apply w-6 h-auto text-gray-900 fill-current;
 }
 
 .sections {
-  @apply space-y-5;
+  @apply space-y-7;
 }
 
 .section {
-  @apply space-y-2;
+  @apply space-y-4;
 }
 
-.section-header {
-  @apply font-bold text-gray-700;
+.section-title {
+  @apply font-bold text-gray-900;
 }
 
 .section-icon {
-  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-700 fill-current
+  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-900 fill-current
 }
 
 .subsection-title {
@@ -42,22 +42,10 @@
 }
 
 .subsection-period {
-  @apply text-sm text-gray-700;
+  @apply text-sm text-gray-600;
 }
 
-.subsection-topics {
-  @apply ml-1 space-y-1;
-}
 
 .topic {
-  @apply flex items-center space-x-2;
-}
-
-.topic-bullet {
-  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-600;
-}
-
-.section {
-  /* margin-bottom: 0.7rem;
-  margin-left: 0.75rem; */
+  @apply flex items-center space-x-2 text-sm;
 }

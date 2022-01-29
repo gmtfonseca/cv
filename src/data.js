@@ -59,7 +59,6 @@ export const traditionalCourses = [
     period: '2009 – 2011',
     tasks: [
       'Learned the basics of computer architecture and software development',
-      'Felt in love with software development',
     ],
   },
 ]
@@ -121,46 +120,52 @@ export const sideProjects = [
   {
     name: 'Quantifico',
     description: 'Mobile and Web app that provides valuable insights on sales',
-    techs: [
-      'Back-end made with Node.js, Express and Mongoose (MongoDB)',
-      'Mobile app made with Flutte',
-      'Web app built with Vue 2, SCSS and HTML',
-    ],
+    techs: ['Node.js', 'MongoDB', 'Flutter', 'Vue 2', 'SCSS'],
+    sourceUrl: '',
+    demoUrl: '',
   },
   {
     name: 'Serverless Email Sender',
     description:
       'Serverless and scalable backend designed to securely send emails with customized template',
     techs: [
-      'Built with Node.js, TypeScript, reCAPTCHA and AWS (SAM, Gateway, Lambda, SES, SSM and KMS)',
+      'Node.js',
+      'TypeScript',
+      'reCAPTCHA v3',
+      'AWS',
+      /* 'Built with Node.js, TypeScript, reCAPTCHA and AWS (SAM, Gateway, Lambda, SES, SSM and KMS)', */
     ],
+    sourceUrl: '',
+    demoUrl: '',
   },
   {
     name: 'Olaria',
     description: 'Fish-farming stock management application',
     techs: [
-      'Back-end made with Node.js, TypeScript, Express, MySQL, Prisma',
-      'Front-end made with Vue 3, PrimeVue, TypeScript and Vuex',
+      'Node.js',
+      'TypeScript',
+      'MySQL',
+      'Vue 3',
+      /* 'Back-end made with Node.js, TypeScript, Express, MySQL, Prisma',
+      'Front-end made with Vue 3, PrimeVue, TypeScript and Vuex', */
     ],
+    sourceUrl: '',
+    demoUrl: '',
   },
-  {
-    name: 'Microsoft Malware Prediction',
-    description:
-      'Personal approach to the Microsoft Malware Prediction competition available at Kaggle',
-    techs: [
-      'Built mainly with Scikit-learn, Pandas, NumPy and Jupyter Notebook',
-    ],
-  },
-  {
+  /* {
     name: 'Replic8',
     description: 'Lightweight cross-platform backup scheduler',
-    techs: ['Made with Python 3 and wxPython'],
-  },
+    techs: ['Python 3', 'wxPython'],
+    sourceUrl: '',
+    demoUrl: '',
+  }, */
   {
     name: 'Arremate',
     description:
       'Cross-platform app to keep track of multiple Facebook auction pages',
-    techs: ['Built with Electron and Vue'],
+    techs: ['Electron', 'Vue 2'],
+    sourceUrl: '',
+    demoUrl: '',
   },
 ]
 

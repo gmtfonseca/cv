@@ -1,13 +1,13 @@
 <template>
-  <div class="m-6">
-    <div class="grid items-center gap-4 mb-6 grid-cols-profile">
+  <div class="m-4">
+    <div class="grid items-center gap-8 mb-8 grid-cols-profile">
       <div>
         <img class="rounded-full" src="@/assets/profile.jpeg" />
       </div>
 
       <div class="flex flex-col space-y-3">
-        <h1 class="text-xl font-semibold text-gray-700">Gustavo Fonseca</h1>
-        <p class="text-gray-600">
+        <h1 class="text-xl font-bold text-gray-900">Gustavo Fonseca</h1>
+        <p class="text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsam
           explicabo iusto provident eum sapiente, earum, enim laborum eius
           dolorem consequuntur doloribus quam alias a! Quis ex beatae aliquid
@@ -58,12 +58,12 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-5">
+    <div class="grid grid-cols-2 gap-8">
       <div class="sections">
         <div class="section">
           <div class="flex items-center gap-2">
             <WorkExperienceIcon class="section-icon" />
-            <h2 class="section-header">WORK EXPERIENCE_</h2>
+            <h2 class="section-title">WORK EXPERIENCE_</h2>
           </div>
 
           <div
@@ -77,13 +77,13 @@
               <p class="subsection-period">{{ workExperience.period }}</p>
             </div>
 
-            <ul class="subsection-topics">
+            <ul class="space-y-2">
               <li
                 v-for="task in workExperience.tasks"
                 :key="task"
                 class="topic"
               >
-                <ListBulletIcon />
+                <ListBulletIcon class="text-gray-300 fill-current" />
                 <span>{{ task }}</span>
               </li>
             </ul>
@@ -93,7 +93,7 @@
         <div class="section">
           <div class="flex items-center gap-2">
             <TraditionalEducationIcon class="section-icon" />
-            <h2 class="section-header">TRADITIONAL EDUCATION_</h2>
+            <h2 class="section-title">TRADITIONAL EDUCATION_</h2>
           </div>
 
           <div
@@ -108,7 +108,7 @@
               <p class="subsection-period">{{ traditionalCourse.period }}</p>
             </div>
 
-            <ul class="subsection-topics">
+            <ul class="space-y-2">
               <li
                 v-for="task in traditionalCourse.tasks"
                 :key="task"
@@ -123,15 +123,15 @@
       </div>
 
       <div class="sections">
-        <div>
-          <div class="flex items-center gap-2 mb-2">
+        <div class="section">
+          <div class="flex items-center gap-2">
             <SkillIcon class="section-icon" />
-            <h2 class="section-header">SKILLS_</h2>
+            <h2 class="section-title">SKILLS_</h2>
           </div>
 
-          <div class="space-y-2">
+          <div class="space-y-5">
             <div v-for="skill in skills" :key="skill" class="space-y-1">
-              <h3 class="font-semibold">{{ skill.level }}</h3>
+              <h3 class="font-semibold text-gray-800">{{ skill.level }}</h3>
               <p class="text-xs">
                 {{ skill.description }}
               </p>
@@ -139,7 +139,7 @@
                 <div
                   v-for="topic in skill.topics"
                   :key="topic"
-                  class="px-2 py-2 text-xs font-semibold text-white bg-gray-600 rounded"
+                  class="px-2 py-1 text-xs font-semibold text-white bg-gray-700 rounded"
                 >
                   {{ topic }}
                 </div>
@@ -148,38 +148,55 @@
           </div>
         </div>
 
-        <div>
+        <div class="section">
           <div class="flex items-center gap-2 mb-2">
             <SideProjectIcon class="section-icon" />
-            <h2 class="section-header">SIDE PROJECTS_</h2>
+            <h2 class="section-title">SIDE PROJECTS_</h2>
           </div>
 
-          <ul class="ml-1">
-            <li v-for="sideProject in sideProjects" :key="sideProject.name">
-              <span class="font-semibold">
-                <a :href="sideProject.url">{{ sideProject.name }} </a>:
-              </span>
-              <span v-for="tech in sideProject.techs" :key="tech">
-                {{ tech }}
-                <br />
-              </span>
+          <ul class="space-y-4">
+            <li
+              v-for="sideProject in sideProjects"
+              :key="sideProject"
+              class="topic"
+            >
+              <!-- <ListBulletIcon /> -->
+              <div class="space-y-1">
+                <h3 class="font-semibold">{{ sideProject.name }}</h3>
+
+                <p>{{ sideProject.description }}</p>
+
+                <div class="flex gap-2">
+                  <a
+                    :href="sideProject.sourceUrl"
+                    class="underline font-gray-500"
+                    >Source Code
+                  </a>
+                  <a :href="sideProject.demoUrl" class="underline font-gray-500"
+                    >Demo</a
+                  >
+                </div>
+              </div>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h2 class="section-header"></h2>
+        <div class="section">
+          <h2 class="section-title"></h2>
           <div class="flex items-center gap-2 mb-2">
             <OnlineEducationIcon class="section-icon" />
-            <h2 class="section-header">ONLINE EDUCATION_</h2>
+            <h2 class="section-title">ONLINE EDUCATION_</h2>
           </div>
 
-          <ul class="ml-1">
+          <ul class="ml-1 space-y-1">
             <li
               v-for="onlineCourse in onlineCourses"
               :key="onlineCourse.course"
             >
-              <a class="font-semibold" :href="onlineCourse.url" target="_blank"
+              <a
+                class="font-semibold underline"
+                :href="onlineCourse.url"
+                target="_blank"
                 >{{ onlineCourse.course }}
               </a>
               <span> - {{ onlineCourse.institution }}</span>
@@ -239,4 +256,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+html {
+  font-size: 75%;
+}
+</style>
