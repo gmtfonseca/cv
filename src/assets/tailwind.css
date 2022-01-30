@@ -6,7 +6,7 @@
 
 
 .contact-item {
-  @apply flex items-center space-x-2 text-gray-800;
+  @apply flex items-center space-x-2 text-gray-700;
 }
 
 .contact-icon {
@@ -14,11 +14,11 @@
 }
 
 .social-item {
-  @apply text-gray-600;
+  @apply text-gray-700;
 }
 
 .social-icon {
-  @apply w-6 h-auto text-gray-900 fill-current;
+  @apply w-6 h-auto text-gray-700 fill-current;
 }
 
 .sections {
@@ -26,26 +26,31 @@
 }
 
 .section {
-  @apply space-y-4;
+  @apply space-y-3;
 }
 
-.section-title {
-  @apply font-bold text-gray-900;
+.section-header {
+  @apply flex items-center gap-2;
 }
 
 .section-icon {
-  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-900 fill-current
+  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-700 fill-current
 }
+
+.section-title {
+  @apply font-bold text-gray-700;
+}
+
 
 .subsection-title {
-  @apply font-semibold text-gray-800;
+  @apply font-semibold text-gray-700;
 }
 
-.subsection-period {
+.subsection-timeline {
   @apply text-sm text-gray-600;
 }
 
 
 .topic {
-  @apply flex items-center space-x-2 text-sm;
+  @apply flex items-center space-x-2 text-sm ;
 }

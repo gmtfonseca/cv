@@ -5,8 +5,8 @@
         <img class="rounded-full" src="@/assets/profile.jpeg" />
       </div>
 
-      <div class="flex flex-col space-y-3">
-        <h1 class="text-xl font-bold text-gray-900">Gustavo Fonseca</h1>
+      <div class="flex flex-col gap-3">
+        <h1 class="text-xl font-bold text-gray-700">Gustavo Fonseca</h1>
         <p class="text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsam
           explicabo iusto provident eum sapiente, earum, enim laborum eius
@@ -21,7 +21,7 @@
             is, someone who is willing to tackle any problem, regardless of the environment, with code. 
           -->
         </p>
-        <div class="flex space-x-6">
+        <div class="flex gap-6">
           <div class="contact-item">
             <PhoneIcon class="contact-icon" />
             <span>+55 (51) 997339260</span>
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="flex space-x-4">
+        <div class="flex gap-6">
           <a
             href="https://www.linkedin.com/in/gustavo-fonseca-0300ba209/"
             target="_blank"
@@ -61,7 +61,7 @@
     <div class="grid grid-cols-2 gap-8">
       <div class="sections">
         <div class="section">
-          <div class="flex items-center gap-2">
+          <div class="section-header">
             <WorkExperienceIcon class="section-icon" />
             <h2 class="section-title">WORK EXPERIENCE_</h2>
           </div>
@@ -74,7 +74,7 @@
               <p class="subsection-title">
                 {{ workExperience.role }} — {{ workExperience.company }}
               </p>
-              <p class="subsection-period">{{ workExperience.period }}</p>
+              <p class="subsection-timeline">{{ workExperience.period }}</p>
             </div>
 
             <ul class="space-y-2">
@@ -83,7 +83,7 @@
                 :key="task"
                 class="topic"
               >
-                <ListBulletIcon class="text-gray-300 fill-current" />
+                <ListBulletIcon />
                 <span>{{ task }}</span>
               </li>
             </ul>
@@ -91,7 +91,7 @@
         </div>
 
         <div class="section">
-          <div class="flex items-center gap-2">
+          <div class="section-header">
             <TraditionalEducationIcon class="section-icon" />
             <h2 class="section-title">TRADITIONAL EDUCATION_</h2>
           </div>
@@ -105,7 +105,7 @@
                 {{ traditionalCourse.name }} —
                 {{ traditionalCourse.institution }}
               </p>
-              <p class="subsection-period">{{ traditionalCourse.period }}</p>
+              <p class="subsection-timeline">{{ traditionalCourse.period }}</p>
             </div>
 
             <ul class="space-y-2">
@@ -124,22 +124,22 @@
 
       <div class="sections">
         <div class="section">
-          <div class="flex items-center gap-2">
+          <div class="section-header">
             <SkillIcon class="section-icon" />
             <h2 class="section-title">SKILLS_</h2>
           </div>
 
-          <div class="space-y-5">
-            <div v-for="skill in skills" :key="skill" class="space-y-1">
-              <h3 class="font-semibold text-gray-800">{{ skill.level }}</h3>
-              <p class="text-xs">
+          <div class="space-y-4">
+            <div v-for="skill in skills" :key="skill">
+              <h3 class="subsection-title">{{ skill.level }}</h3>
+              <p class="mt-1 mb-3 text-xs text-gray-700">
                 {{ skill.description }}
               </p>
               <div class="flex flex-wrap gap-2 mt-1 w-96">
                 <div
                   v-for="topic in skill.topics"
                   :key="topic"
-                  class="px-2 py-1 text-xs font-semibold text-white bg-gray-700 rounded"
+                  class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-300 rounded"
                 >
                   {{ topic }}
                 </div>
@@ -149,32 +149,23 @@
         </div>
 
         <div class="section">
-          <div class="flex items-center gap-2 mb-2">
+          <div class="section-header">
             <SideProjectIcon class="section-icon" />
             <h2 class="section-title">SIDE PROJECTS_</h2>
           </div>
 
           <ul class="space-y-4">
-            <li
-              v-for="sideProject in sideProjects"
-              :key="sideProject"
-              class="topic"
-            >
-              <!-- <ListBulletIcon /> -->
+            <li v-for="sideProject in sideProjects" :key="sideProject" class="">
               <div class="space-y-1">
-                <h3 class="font-semibold">{{ sideProject.name }}</h3>
+                <h3 class="subsection-title">
+                  {{ sideProject.name }}
+                </h3>
 
-                <p>{{ sideProject.description }}</p>
+                <p class="text-sm">{{ sideProject.description }}</p>
 
-                <div class="flex gap-2">
-                  <a
-                    :href="sideProject.sourceUrl"
-                    class="underline font-gray-500"
-                    >Source Code
-                  </a>
-                  <a :href="sideProject.demoUrl" class="underline font-gray-500"
-                    >Demo</a
-                  >
+                <div class="flex gap-2 text-sm underline font-gray-500">
+                  <a :href="sideProject.sourceUrl">Source Code </a>
+                  <a :href="sideProject.demoUrl">Demo</a>
                 </div>
               </div>
             </li>
@@ -182,19 +173,18 @@
         </div>
 
         <div class="section">
-          <h2 class="section-title"></h2>
-          <div class="flex items-center gap-2 mb-2">
+          <div class="section-header">
             <OnlineEducationIcon class="section-icon" />
             <h2 class="section-title">ONLINE EDUCATION_</h2>
           </div>
 
-          <ul class="ml-1 space-y-1">
+          <ul class="space-y-1">
             <li
               v-for="onlineCourse in onlineCourses"
               :key="onlineCourse.course"
             >
               <a
-                class="font-semibold underline"
+                class="subsection-title"
                 :href="onlineCourse.url"
                 target="_blank"
                 >{{ onlineCourse.course }}

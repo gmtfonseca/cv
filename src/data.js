@@ -172,7 +172,7 @@ export const sideProjects = [
 export const onlineCourses = [
   {
     course: 'Amazon Web Services Developer Associate',
-    institution: 'AWS',
+    institution: 'Amazon',
     url: 'https://aws.amazon.com/certification/certified-developer-associate/',
   },
   {
