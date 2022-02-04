@@ -68,7 +68,7 @@ export const skills = [
     level: 'Proficient',
     description:
       // eslint-disable-next-line quotes
-      "Technologies I've worked with extensively and I'm still working with today",
+      "Technologies I've worked with extensively and I'm still working with today.",
     topics: [
       'JavaScript',
       'Vue',
@@ -85,7 +85,7 @@ export const skills = [
     level: 'Good',
     description:
       // eslint-disable-next-line quotes
-      "Technologies I'm currently working with, but I don't feel proficient yet",
+      "Technologies I'm currently working with, but I don't feel proficient yet.",
     topics: [
       'Docker',
       'MongoDB',
@@ -101,7 +101,7 @@ export const skills = [
     level: 'Average',
     description:
       // eslint-disable-next-line quotes
-      "Technologies I've worked with in the past, but ended up losing practice",
+      "Technologies I've worked with in the past, but ended up losing practice.",
     topics: [
       'Python',
       'T-SQL',
@@ -119,7 +119,7 @@ export const skills = [
 export const sideProjects = [
   {
     name: 'Quantifico',
-    description: 'Mobile and Web app that provides valuable insights on sales',
+    description: 'Mobile and Web app that provides valuable insights on sales.',
     techs: ['Node.js', 'MongoDB', 'Flutter', 'Vue 2', 'SCSS'],
     sourceUrl: '',
     demoUrl: '',
@@ -127,7 +127,7 @@ export const sideProjects = [
   {
     name: 'Serverless Email Sender',
     description:
-      'Serverless and scalable backend designed to securely send emails with customized template',
+      'Serverless and scalable backend designed to securely send emails with customized template.',
     techs: [
       'Node.js',
       'TypeScript',
@@ -140,7 +140,7 @@ export const sideProjects = [
   },
   {
     name: 'Olaria',
-    description: 'Fish-farming stock management application',
+    description: 'Fish-farming stock management application.',
     techs: [
       'Node.js',
       'TypeScript',
@@ -159,20 +159,20 @@ export const sideProjects = [
     sourceUrl: '',
     demoUrl: '',
   }, */
-  {
+  /*  {
     name: 'Arremate',
     description:
       'Cross-platform app to keep track of multiple Facebook auction pages',
     techs: ['Electron', 'Vue 2'],
     sourceUrl: '',
     demoUrl: '',
-  },
+  }, */
 ]
 
 export const onlineCourses = [
   {
     course: 'Amazon Web Services Developer Associate',
-    institution: 'Amazon',
+    institution: 'AWS',
     url: 'https://aws.amazon.com/certification/certified-developer-associate/',
   },
   {

@@ -66,27 +66,28 @@
             <h2 class="section-title">WORK EXPERIENCE_</h2>
           </div>
 
-          <div
-            v-for="workExperience in workExperiences"
-            :key="workExperience.company"
-          >
-            <div class="mb-1">
-              <p class="subsection-title">
-                {{ workExperience.role }} — {{ workExperience.company }}
-              </p>
-              <p class="subsection-timeline">{{ workExperience.period }}</p>
+          <div class="subsections">
+            <div
+              v-for="workExperience in workExperiences"
+              :key="workExperience.company"
+            >
+              <div class="mb-1">
+                <p class="subsection-title">
+                  {{ workExperience.role }} — {{ workExperience.company }}
+                </p>
+                <p class="subsection-timeline">{{ workExperience.period }}</p>
+              </div>
+              <ul class="space-y-1">
+                <li
+                  v-for="task in workExperience.tasks"
+                  :key="task"
+                  class="topic"
+                >
+                  <ListBulletIcon />
+                  <span>{{ task }}</span>
+                </li>
+              </ul>
             </div>
-
-            <ul class="space-y-2">
-              <li
-                v-for="task in workExperience.tasks"
-                :key="task"
-                class="topic"
-              >
-                <ListBulletIcon />
-                <span>{{ task }}</span>
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -96,28 +97,31 @@
             <h2 class="section-title">TRADITIONAL EDUCATION_</h2>
           </div>
 
-          <div
-            v-for="traditionalCourse in traditionalCourses"
-            :key="traditionalCourse.name"
-          >
-            <div class="mb-1">
-              <p class="subsection-title">
-                {{ traditionalCourse.name }} —
-                {{ traditionalCourse.institution }}
-              </p>
-              <p class="subsection-timeline">{{ traditionalCourse.period }}</p>
+          <div class="subsections">
+            <div
+              v-for="traditionalCourse in traditionalCourses"
+              :key="traditionalCourse.name"
+            >
+              <div class="mb-1">
+                <p class="subsection-title">
+                  {{ traditionalCourse.name }} —
+                  {{ traditionalCourse.institution }}
+                </p>
+                <p class="subsection-timeline">
+                  {{ traditionalCourse.period }}
+                </p>
+              </div>
+              <ul class="space-y-1">
+                <li
+                  v-for="task in traditionalCourse.tasks"
+                  :key="task"
+                  class="topic"
+                >
+                  <ListBulletIcon />
+                  <span>{{ task }}</span>
+                </li>
+              </ul>
             </div>
-
-            <ul class="space-y-2">
-              <li
-                v-for="task in traditionalCourse.tasks"
-                :key="task"
-                class="topic"
-              >
-                <ListBulletIcon />
-                <span>{{ task }}</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -129,17 +133,17 @@
             <h2 class="section-title">SKILLS_</h2>
           </div>
 
-          <div class="space-y-4">
+          <div class="subsections">
             <div v-for="skill in skills" :key="skill">
               <h3 class="subsection-title">{{ skill.level }}</h3>
-              <p class="mt-1 mb-3 text-xs text-gray-700">
+              <p class="mt-1 mb-3 text-xs text-gray-600">
                 {{ skill.description }}
               </p>
-              <div class="flex flex-wrap gap-2 mt-1 w-96">
+              <div class="flex flex-wrap gap-2 mt-1">
                 <div
                   v-for="topic in skill.topics"
                   :key="topic"
-                  class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-300 rounded"
+                  class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-200 rounded"
                 >
                   {{ topic }}
                 </div>
@@ -154,18 +158,28 @@
             <h2 class="section-title">SIDE PROJECTS_</h2>
           </div>
 
-          <ul class="space-y-4">
-            <li v-for="sideProject in sideProjects" :key="sideProject" class="">
-              <div class="space-y-1">
+          <ul class="subsections">
+            <li
+              v-for="sideProject in sideProjects"
+              :key="sideProject"
+              class="p-4 bg-gray-100 rounded"
+            >
+              <div>
                 <h3 class="subsection-title">
                   {{ sideProject.name }}
                 </h3>
 
-                <p class="text-sm">{{ sideProject.description }}</p>
+                <p class="mt-2 text-xs text-gray-600">
+                  {{ sideProject.description }}
+                </p>
 
-                <div class="flex gap-2 text-sm underline font-gray-500">
-                  <a :href="sideProject.sourceUrl">Source Code </a>
-                  <a :href="sideProject.demoUrl">Demo</a>
+                <div class="flex gap-3 mt-3 font-semibold">
+                  <div class="px-2 py-1 text-xs text-white bg-gray-600 rounded">
+                    <a :href="sideProject.sourceUrl">Source Code</a>
+                  </div>
+                  <div class="px-2 py-1 text-xs text-white bg-gray-600 rounded">
+                    <a :href="sideProject.demoUrl">Demo</a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -178,7 +192,7 @@
             <h2 class="section-title">ONLINE EDUCATION_</h2>
           </div>
 
-          <ul class="space-y-1">
+          <ul class="ml-2 space-y-1">
             <li
               v-for="onlineCourse in onlineCourses"
               :key="onlineCourse.course"
@@ -189,7 +203,9 @@
                 target="_blank"
                 >{{ onlineCourse.course }}
               </a>
-              <span> - {{ onlineCourse.institution }}</span>
+              <span class="text-gray-600">
+                — {{ onlineCourse.institution }}</span
+              >
             </li>
           </ul>
         </div>
@@ -248,6 +264,62 @@ export default {
 
 <style>
 html {
-  font-size: 75%;
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.contact-item {
+  @apply flex items-center space-x-2 text-gray-700;
+}
+
+.contact-icon {
+  @apply w-5 h-auto fill-current;
+}
+
+.social-item {
+  @apply text-gray-700;
+}
+
+.social-icon {
+  @apply w-6 h-auto text-gray-700 fill-current;
+}
+
+.sections {
+  @apply space-y-7;
+}
+
+.section {
+  @apply space-y-3;
+}
+
+.section-header {
+  @apply flex items-start gap-2;
+}
+
+.section-icon {
+  @apply flex-grow-0 flex-shrink-0 w-5 text-gray-700 fill-current;
+}
+
+.section-title {
+  @apply font-bold text-gray-700;
+}
+
+.subsections {
+  @apply ml-2 space-y-4;
+}
+
+.subsection-title {
+  @apply mb-1 font-semibold text-gray-700;
+}
+
+.subsection-timeline {
+  @apply text-sm font-semibold text-gray-500;
+}
+
+.topic {
+  @apply flex items-center space-x-2 text-sm text-gray-600;
 }
 </style>
