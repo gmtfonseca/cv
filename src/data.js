@@ -17,7 +17,7 @@ export const workExperiences = [
     period: 'May 2013 – Feb 2018',
     tasks: [
       'Worked with SQL, PL-SQL, T-SQL, HTML, CSS, JavaScript and Agile',
-      'Collaborated with several teammates and external teams',
+      'Collaborated with internal and external teams',
       'Built new solutions related to Supply Chain Management',
       'Refactored legacy code to improve code quality and performance',
     ],
@@ -28,7 +28,7 @@ export const workExperiences = [
     period: 'Mar 2011 – Apr 2013',
     tasks: [
       'Worked with Delphi, PostgreSQL and Firebird',
-      'Worked on a brand new ERP along with 4 other teammates',
+      'Worked on a brand new ERP along with four other teammates',
     ],
   },
 ]
@@ -41,7 +41,7 @@ export const traditionalCourses = [
     tasks: [
       'Approved with praise and distinction',
       'Learned how to optimize the software development process',
-      'Volunteered to develop a process management system for a school along with 4 teammates',
+      'Teamed up with four colleagues to develop a process management system for a local school',
     ],
   },
   {
@@ -59,6 +59,7 @@ export const traditionalCourses = [
     period: '2009 – 2011',
     tasks: [
       'Learned the basics of computer architecture and software development',
+      'Felt in love with software development',
     ],
   },
 ]
@@ -127,7 +128,7 @@ export const sideProjects = [
   {
     name: 'Serverless Email Sender',
     description:
-      'Serverless and scalable backend designed to securely send emails with customized template.',
+      'Serverless and scalable backend designed to securely send emails with a custom template.',
     techs: [
       'Node.js',
       'TypeScript',
@@ -188,6 +189,11 @@ export const onlineCourses = [
   {
     course: 'CS50: Introduction to Computer Science',
     institution: 'Harvard University',
+    url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
+  },
+  {
+    course: 'Build a Modern Computer from First Principles',
+    institution: 'Hebrew University of Jerusalem',
     url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
   },
 ]

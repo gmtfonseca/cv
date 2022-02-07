@@ -1,27 +1,23 @@
 <template>
   <div class="m-4">
-    <div class="grid items-center gap-8 mb-8 grid-cols-profile">
+    <div class="grid items-center gap-8 mb-12 grid-cols-profile">
       <div>
-        <img class="rounded-full" src="@/assets/profile.jpeg" />
+        <img class="rounded-full shadow" src="@/assets/profile.jpeg" />
       </div>
 
       <div class="flex flex-col gap-3">
-        <h1 class="text-xl font-bold text-gray-700">Gustavo Fonseca</h1>
-        <p class="text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsam
-          explicabo iusto provident eum sapiente, earum, enim laborum eius
-          dolorem consequuntur doloribus quam alias a! Quis ex beatae aliquid
-          distinctio.
-          <!-- First and foremost, I love coding, and I feel blessed that I've been able to do it for a living for more than 10 years.
-      
-            I've been working as a solo developer for the past few years, but I've also been part of a big team, therefore I feel confident that I have both the team play and self-discipline necessary
-            to succeed in any work environment.
-      
-            Lastly, based on my expertises and according to the industry terminology, I'm classified as a Full-Stack Developer, however, I prefer to describe myself simply as a Software Engineer, that
-            is, someone who is willing to tackle any problem, regardless of the environment, with code. 
-          -->
+        <h1 class="text-xl font-bold tracking-wider text-gray-700">
+          Gustavo Fonseca_
+        </h1>
+        <p class="text-sm leading-6 text-gray-600">
+          First and foremost, I love coding, and I feel blessed to have been
+          able to do it for a living for more than 10 years. I've been working
+          as a solo developer for the past few years, but I've also been part of
+          a big team, therefore I feel confident that I have both the team play
+          and self-discipline necessary to succeed in any work environment.
         </p>
-        <div class="flex gap-6">
+
+        <div class="flex gap-10">
           <div class="contact-item">
             <PhoneIcon class="contact-icon" />
             <span>+55 (51) 997339260</span>
@@ -77,14 +73,14 @@
                 </p>
                 <p class="subsection-timeline">{{ workExperience.period }}</p>
               </div>
-              <ul class="space-y-1">
+              <ul class="space-y-2">
                 <li
                   v-for="task in workExperience.tasks"
                   :key="task"
                   class="topic"
                 >
                   <ListBulletIcon />
-                  <span>{{ task }}</span>
+                  <span class="topic-text">{{ task }}</span>
                 </li>
               </ul>
             </div>
@@ -111,14 +107,14 @@
                   {{ traditionalCourse.period }}
                 </p>
               </div>
-              <ul class="space-y-1">
+              <ul class="space-y-2">
                 <li
                   v-for="task in traditionalCourse.tasks"
                   :key="task"
                   class="topic"
                 >
                   <ListBulletIcon />
-                  <span>{{ task }}</span>
+                  <span class="topic-text">{{ task }}</span>
                 </li>
               </ul>
             </div>
@@ -143,7 +139,7 @@
                 <div
                   v-for="topic in skill.topics"
                   :key="topic"
-                  class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-200 rounded"
+                  class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-300 rounded"
                 >
                   {{ topic }}
                 </div>
@@ -162,14 +158,14 @@
             <li
               v-for="sideProject in sideProjects"
               :key="sideProject"
-              class="p-4 bg-gray-100 rounded"
+              class="p-4 bg-gray-200 rounded"
             >
               <div>
                 <h3 class="subsection-title">
                   {{ sideProject.name }}
                 </h3>
 
-                <p class="mt-2 text-xs text-gray-600">
+                <p class="mt-2 text-xs leading-5 text-gray-600">
                   {{ sideProject.description }}
                 </p>
 
@@ -192,7 +188,7 @@
             <h2 class="section-title">ONLINE EDUCATION_</h2>
           </div>
 
-          <ul class="ml-2 space-y-1">
+          <ul class="ml-2 space-y-2">
             <li
               v-for="onlineCourse in onlineCourses"
               :key="onlineCourse.course"
@@ -263,13 +259,11 @@ export default {
 </script>
 
 <style>
-html {
-  font-size: 100%;
+html:not(svg) {
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 .contact-item {
   @apply flex items-center space-x-2 text-gray-700;
@@ -320,6 +314,10 @@ html {
 }
 
 .topic {
-  @apply flex items-center space-x-2 text-sm text-gray-600;
+  @apply flex items-center space-x-2;
+}
+
+.topic-text {
+  @apply text-sm text-gray-600;
 }
 </style>

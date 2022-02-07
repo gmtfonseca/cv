@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        profile: '150px auto',
+        profile: '180px auto',
       },
     },
   },
