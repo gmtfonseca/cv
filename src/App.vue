@@ -12,4 +12,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+html {
+  font-size: 72%;
+}
+
+@page {
+  margin: 5mm 5mm 5mm 5mm;
+}
+</style>

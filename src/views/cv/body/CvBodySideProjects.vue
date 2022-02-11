@@ -23,7 +23,10 @@
             <div class="px-2 py-1 text-xs text-white bg-gray-600 rounded">
               <a :href="sideProject.sourceUrl">Source Code</a>
             </div>
-            <div class="px-2 py-1 text-xs text-white bg-gray-600 rounded">
+            <div
+              v-if="sideProject.demoUrl"
+              class="px-2 py-1 text-xs text-white bg-gray-600 rounded"
+            >
               <a :href="sideProject.demoUrl">Demo</a>
             </div>
           </div>

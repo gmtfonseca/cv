@@ -149,7 +149,7 @@ export const sideProjects = [
     description: 'Mobile and Web app that provides valuable insights on sales.',
     techs: ['Node.js', 'MongoDB', 'Flutter', 'Vue 2', 'SCSS'],
     sourceUrl: '',
-    demoUrl: '',
+    demoUrl: 'aa',
   },
   {
     name: 'Serverless Email Sender',
@@ -177,7 +177,7 @@ export const sideProjects = [
       'Front-end made with Vue 3, PrimeVue, TypeScript and Vuex', */
     ],
     sourceUrl: '',
-    demoUrl: '',
+    demoUrl: 'aa',
   },
   /* {
     name: 'Replic8',
