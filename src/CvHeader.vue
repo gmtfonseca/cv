@@ -46,7 +46,6 @@ import PhoneIcon from '@/assets/icons/PhoneIcon'
 import SocialIcon from '@/assets/icons/SocialIcon'
 
 export default {
-  name: 'App',
   components: {
     EmailIcon,
     PhoneIcon,

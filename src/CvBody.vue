@@ -24,7 +24,6 @@ import SideProjects from '@/components/SideProjects.vue'
 import OnlineEducation from '@/components/OnlineEducation.vue'
 
 export default {
-  name: 'App',
   components: {
     WorkExperience,
     TraditionalEducation,
