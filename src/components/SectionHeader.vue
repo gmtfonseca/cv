@@ -10,7 +10,6 @@
 
 <script>
 export default {
-  name: 'App',
   props: {
     title: {
       type: String,
