@@ -21,7 +21,7 @@
 <script>
 import { onlineCourses } from '@/data'
 
-import OnlineEducationIcon from '@/assets/icons/OnlineEducationIcon'
+import OnlineEducationIcon from '@/components/icons/OnlineEducationIcon'
 import SectionHeader from '@/components/SectionHeader.vue'
 
 export default {

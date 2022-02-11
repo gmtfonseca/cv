@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import CvHeader from '@/CvHeader.vue'
-import CvBody from '@/CvBody.vue'
+import CvHeader from '@/views/cv/header/CvHeader.vue'
+import CvBody from '@/views/cv/body/CvBody.vue'
 
 export default {
   components: {

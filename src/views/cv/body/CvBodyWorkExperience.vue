@@ -1,27 +1,25 @@
-Tr
 <template>
   <div class="space-y-3">
-    <SectionHeader title="TRADITIONAL EDUCATION_">
-      <TraditionalEducationIcon />
+    <SectionHeader title="WORK EXPERIENCE_">
+      <WorkExperienceIcon />
     </SectionHeader>
 
     <div class="ml-2 space-y-4">
       <div
-        v-for="traditionalCourse in traditionalCourses"
-        :key="traditionalCourse.name"
+        v-for="workExperience in workExperiences"
+        :key="workExperience.company"
       >
         <div class="mb-1">
           <p class="mb-1 font-semibold text-gray-700">
-            {{ traditionalCourse.name }} —
-            {{ traditionalCourse.institution }}
+            {{ workExperience.role }} — {{ workExperience.company }}
           </p>
           <p class="text-sm font-semibold text-gray-500">
-            {{ traditionalCourse.period }}
+            {{ workExperience.period }}
           </p>
         </div>
         <ul class="space-y-2">
           <li
-            v-for="task in traditionalCourse.tasks"
+            v-for="task in workExperience.tasks"
             :key="task"
             class="flex items-center space-x-2"
           >
@@ -35,21 +33,21 @@ Tr
 </template>
 
 <script>
-import { traditionalCourses } from '@/data'
+import { workExperiences } from '@/data'
 
-import ListBulletIcon from '@/assets/icons/ListBulletIcon'
-import TraditionalEducationIcon from '@/assets/icons/TraditionalEducationIcon'
+import ListBulletIcon from '@/components/icons/ListBulletIcon'
+import WorkExperienceIcon from '@/components/icons/WorkExperienceIcon'
 import SectionHeader from '@/components/SectionHeader.vue'
 
 export default {
   components: {
     ListBulletIcon,
-    TraditionalEducationIcon,
+    WorkExperienceIcon,
     SectionHeader,
   },
   data() {
     return {
-      traditionalCourses,
+      workExperiences,
     }
   },
 }

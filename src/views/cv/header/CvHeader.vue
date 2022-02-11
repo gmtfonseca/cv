@@ -41,9 +41,9 @@
 <script>
 import { profile } from '@/data'
 
-import EmailIcon from '@/assets/icons/EmailIcon'
-import PhoneIcon from '@/assets/icons/PhoneIcon'
-import SocialIcon from '@/assets/icons/SocialIcon'
+import EmailIcon from '@/components/icons/EmailIcon'
+import PhoneIcon from '@/components/icons/PhoneIcon'
+import SocialIcon from '@/components/icons/SocialIcon'
 
 export default {
   components: {

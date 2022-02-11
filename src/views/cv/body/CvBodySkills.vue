@@ -27,7 +27,7 @@
 <script>
 import { skills } from '@/data'
 
-import SkillIcon from '@/assets/icons/SkillIcon'
+import SkillIcon from '@/components/icons/SkillIcon'
 import SectionHeader from '@/components/SectionHeader.vue'
 
 export default {

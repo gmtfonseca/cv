@@ -36,7 +36,7 @@
 <script>
 import { sideProjects } from '@/data'
 
-import SideProjectIcon from '@/assets/icons/SideProjectIcon'
+import SideProjectIcon from '@/components/icons/SideProjectIcon'
 import SectionHeader from '@/components/SectionHeader.vue'
 
 export default {

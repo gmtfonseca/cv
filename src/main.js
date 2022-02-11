@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import Cv from '@/Cv.vue'
-import './assets/tailwind.css'
+import App from '@/App.vue'
+import '@/assets/tailwind.css'
 
-createApp(Cv).mount('#app')
+createApp(App).mount('#app')
