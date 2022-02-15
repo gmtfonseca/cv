@@ -1,14 +1,14 @@
 <template>
-  <div class="grid items-center gap-8 mb-12 grid-cols-profile">
+  <div class="grid items-center gap-10 grid-cols-profile">
     <div>
-      <img class="rounded-full shadow" src="@/assets/profile.jpeg" />
+      <img class="rounded-full shadow grayscale" src="@/assets/profile.jpeg" />
     </div>
 
-    <div class="flex flex-col justify-center gap-3">
+    <div class="flex flex-col justify-center gap-4">
       <h1 class="text-xl font-bold tracking-wider text-gray-700">
         {{ profile.name }}
       </h1>
-      <p class="max-w-4xl text-sm leading-6 text-gray-600">
+      <p class="max-w-4xl text-sm leading-7 text-gray-600">
         {{ profile.bio }}
       </p>
 
@@ -31,7 +31,7 @@
           target="_blank"
           class="text-gray-700"
         >
-          <SocialIcon :path="social.svgPath" class="w-6 h-auto fill-current" />
+          <SocialIcon :path="social.svgPath" class="h-auto fill-current w-7" />
         </a>
       </div>
     </div>

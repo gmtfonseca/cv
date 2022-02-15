@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        profile: '130px auto',
+        profile: '170px auto',
       },
     },
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="m-4">
-    <CvHeader />
+    <CvHeader class="mb-10" />
     <CvBody />
   </div>
 </template>
