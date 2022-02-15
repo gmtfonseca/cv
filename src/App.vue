@@ -14,7 +14,7 @@ export default {
 
 <style>
 html {
-  font-size: 72%;
+  font-size: 75%;
 }
 
 @page {
