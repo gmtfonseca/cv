@@ -5,9 +5,13 @@ module.exports = {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
     },
+
     extend: {
       gridTemplateColumns: {
         profile: '170px auto',
+      },
+      fontSize: {
+        xxs: '0.6rem',
       },
     },
   },

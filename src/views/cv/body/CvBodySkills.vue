@@ -14,7 +14,7 @@
           <div
             v-for="topic in skill.topics"
             :key="topic"
-            class="px-2 py-1 text-xs font-semibold text-gray-900 bg-gray-300 rounded"
+            class="px-2 py-1 text-xs font-semibold text-gray-700 bg-gray-300 rounded"
           >
             {{ topic }}
           </div>

@@ -1,8 +1,9 @@
 export const profile = {
   name: 'Gustavo Fonseca_',
-  bio: `First and foremost, I love coding, and I feel blessed to have been able to do it for a living for more than 10 years. 
-    I've been working as a solo developer for the past few years, but I've also been part of a big team,
-    therefore I feel confident that I have both the team play and self-discipline necessary to succeed in any work environment.`,
+  bio: `Firstly, I love coding, and I feel blessed that I've been able to do it for a living for over 11 years.
+        For the past few years, I've been working as a solo developer, but I've also been part of major teams before,
+        therefore I feel confident that I have both the team play and self-discipline necessary to succeed in any work environment.
+        Feel free to contact me through any of my socials listed below.`,
   phone: '+55 (51) 997339260',
   email: 'gmtfonseca@gmail.com',
   socials: [
@@ -34,7 +35,7 @@ export const workExperiences = [
     period: 'Feb 2018 – to date',
     tasks: [
       'Worked with Vue 2 & 3, Node.js, MongoDB, TypeScript, SQL, Docker, TDD (Jest), Cypress and Python',
-      'Built single-page and mobile applications to support Financial and Supply Chain Management processes',
+      'Built new single-page and mobile applications to support Financial and Supply Chain Management processes',
       'Worked with mining and plot libraries to bring valuable product and customer insights',
       'Deployed several applications to the cloud using AWS services',
       'Built CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront to improve the software development cycle',
@@ -46,9 +47,10 @@ export const workExperiences = [
     period: 'May 2013 – Feb 2018',
     tasks: [
       'Worked with SQL, PL-SQL, T-SQL, HTML, CSS, JavaScript and Agile',
-      'Collaborated with internal and external teams',
-      'Built new solutions related to Supply Chain Management',
-      'Refactored legacy code to improve code quality and performance',
+      'Built new Supply Chain Management applications using Agile techniques',
+      'Worked closely with support teams to resolve critical customer issues',
+      'Presented internal lectures on SQL optimization techniques',
+      'Refactored a huge legacy codebase to improve code quality and performance',
     ],
   },
   {
@@ -57,7 +59,7 @@ export const workExperiences = [
     period: 'Mar 2011 – Apr 2013',
     tasks: [
       'Worked with Delphi, PostgreSQL and Firebird',
-      'Worked on a brand new ERP along with four other teammates',
+      'Collaborated with four teammates to build a brand new ERP',
     ],
   },
 ]
@@ -78,8 +80,8 @@ export const traditionalCourses = [
     institution: 'UNISINOS',
     period: '2011 – 2013 (uncompleted)',
     tasks: [
-      'Introduced to Data Structures & Algorithms and the tradeoffs between them',
-      'Learned asymptotic notation and how to describe algorithms time and space complexity with it',
+      'Introduced to Data Structures & Algorithms and their respective tradeoffs',
+      /* 'Learned asymptotic notation and how to describe algorithms time and space complexity with it', */
     ],
   },
   {
@@ -87,7 +89,7 @@ export const traditionalCourses = [
     institution: 'IEI',
     period: '2009 – 2011',
     tasks: [
-      'Learned the basics of computer architecture and software development',
+      /* 'Learned the basics of computer architecture and software development', */
       'Felt in love with software development',
     ],
   },
@@ -147,58 +149,30 @@ export const sideProjects = [
   {
     name: 'Quantifico',
     description: 'Mobile and Web app that provides valuable insights on sales.',
-    techs: ['Node.js', 'MongoDB', 'Flutter', 'Vue 2', 'SCSS'],
-    sourceUrl: '',
-    demoUrl: 'aa',
+    techs: ['JavaScript', 'Flutter', 'Python 3', 'MongoDB'],
+    sourceUrl: 'https://github.com/gmtfonseca/quantifico',
+    demoUrl: 'a',
+  },
+  {
+    name: 'Olaria',
+    description: 'Fish-farming stock management application.',
+    techs: ['TypeScript', 'MySQL', 'Vue 3'],
+    sourceUrl: 'https://github.com/gmtfonseca/olaria',
+    demoUrl: '',
   },
   {
     name: 'Serverless Email Sender',
     description:
       'Serverless and scalable backend designed to securely send emails with a custom template.',
-    techs: [
-      'Node.js',
-      'TypeScript',
-      'reCAPTCHA v3',
-      'AWS',
-      /* 'Built with Node.js, TypeScript, reCAPTCHA and AWS (SAM, Gateway, Lambda, SES, SSM and KMS)', */
-    ],
-    sourceUrl: '',
+    techs: ['Node.js', 'TypeScript', 'AWS'],
+    sourceUrl: 'https://github.com/gmtfonseca/dom-server',
     demoUrl: '',
   },
-  {
-    name: 'Olaria',
-    description: 'Fish-farming stock management application.',
-    techs: [
-      'Node.js',
-      'TypeScript',
-      'MySQL',
-      'Vue 3',
-      /* 'Back-end made with Node.js, TypeScript, Express, MySQL, Prisma',
-      'Front-end made with Vue 3, PrimeVue, TypeScript and Vuex', */
-    ],
-    sourceUrl: '',
-    demoUrl: 'aa',
-  },
-  /* {
-    name: 'Replic8',
-    description: 'Lightweight cross-platform backup scheduler',
-    techs: ['Python 3', 'wxPython'],
-    sourceUrl: '',
-    demoUrl: '',
-  }, */
-  /*  {
-    name: 'Arremate',
-    description:
-      'Cross-platform app to keep track of multiple Facebook auction pages',
-    techs: ['Electron', 'Vue 2'],
-    sourceUrl: '',
-    demoUrl: '',
-  }, */
 ]
 
 export const onlineCourses = [
   {
-    course: 'Amazon Web Services Developer Associate',
+    course: 'Amazon Web Services Developer - Associate',
     institution: 'AWS',
     url: 'https://aws.amazon.com/certification/certified-developer-associate/',
   },
@@ -218,8 +192,13 @@ export const onlineCourses = [
     url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
   },
   {
+    course: 'Essential Math for Machine Learning',
+    institution: 'Microsoft',
+    url: 'https://learning.edx.org/course/course-v1:Microsoft+DAT256x+1T2019a/home',
+  },
+  /* {
     course: 'Build a Modern Computer from First Principles',
     institution: 'Hebrew University of Jerusalem',
     url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
-  },
+  }, */
 ]
