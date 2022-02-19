@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Gustavo Fonseca_',
   bio: `Firstly, I love coding, and I feel blessed that I've been able to do it for a living for over 11 years.
-        For the past few years, I've been working as a solo developer, but I've also been part of major teams before,
+        For the past few years, I've been working as a solo developer, but I've also been part of big teams before,
         therefore I feel confident that I have both the team play and self-discipline necessary to succeed in any work environment.
         Feel free to contact me through any of my socials listed below.`,
   phone: '+55 (51) 997339260',
