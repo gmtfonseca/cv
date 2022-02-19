@@ -151,7 +151,7 @@ export const sideProjects = [
     description: 'Mobile and Web app that provides valuable insights on sales.',
     techs: ['JavaScript', 'Flutter', 'Python 3', 'MongoDB'],
     sourceUrl: 'https://github.com/gmtfonseca/quantifico',
-    demoUrl: 'a',
+    demoUrl: '',
   },
   {
     name: 'Olaria',
@@ -165,7 +165,7 @@ export const sideProjects = [
     description:
       'Serverless and scalable backend designed to securely send emails with a custom template.',
     techs: ['Node.js', 'TypeScript', 'AWS'],
-    sourceUrl: 'https://github.com/gmtfonseca/dom-server',
+    sourceUrl: 'https://github.com/gmtfonseca/serverless-email-sender',
     demoUrl: '',
   },
 ]

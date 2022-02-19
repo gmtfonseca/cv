@@ -32,13 +32,13 @@
 
         <div class="flex gap-3 mt-3 font-semibold">
           <div class="px-3 py-1 text-xs text-white bg-gray-600 rounded">
-            <a :href="sideProject.sourceUrl">Source Code</a>
+            <a :href="sideProject.sourceUrl" target="_blank">Source Code</a>
           </div>
           <div
             v-if="sideProject.demoUrl"
             class="px-3 py-1 text-xs text-white bg-gray-600 rounded"
           >
-            <a :href="sideProject.demoUrl">Demo</a>
+            <a :href="sideProject.demoUrl" target="_blank">Demo</a>
           </div>
         </div>
       </li>
