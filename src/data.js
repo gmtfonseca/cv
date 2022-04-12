@@ -130,7 +130,7 @@ export const skills = [
   {
     level: 'Average',
     description: `Technologies I've worked with in the past,
-                  but ended up losing practice.`,
+                  but ended up losing competence.`,
     topics: [
       'Python',
       'T-SQL',

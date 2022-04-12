@@ -8,7 +8,7 @@ module.exports = {
 
     extend: {
       gridTemplateColumns: {
-        profile: '170px auto',
+        profile: '150px auto',
       },
       fontSize: {
         xxs: '0.6rem',
