@@ -31,7 +31,7 @@ export const profile = {
 export const workExperiences = [
   {
     company: 'Fonseca LTDA',
-    role: 'Software Architect',
+    role: 'Software Engineer',
     period: 'Feb 2018 – to date',
     tasks: [
       'Worked with Vue 2 & 3, Node.js, MongoDB, TypeScript, SQL, Docker, TDD (Jest), Cypress and Python',
