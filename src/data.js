@@ -1,9 +1,9 @@
 export const profile = {
   name: 'Gustavo Fonseca_',
-  bio: `Firstly, I love coding, and I feel blessed that I've been able to do it for a living for over 11 years.
-        For the past few years, I've been working as a solo developer, but I've also been part of big teams before,
-        therefore I feel confident that I have both the team play and self-discipline necessary to succeed in any work environment.
-        Feel free to contact me through any of my socials listed below.`,
+  bio: `I have a deep passion for coding, and I consider myself fortunate to have pursued it professionally for over 13 years.
+        My background encompasses both independent and team-based projects, providing me with the collaborative spirit and strong
+        self-discipline needed to succeed in any work environment.        
+        Please don't hesitate to reach out to me through any of the social media platforms listed below.`,
   phone: '+55 (51) 997339260',
   email: 'gmtfonseca@gmail.com',
   socials: [
@@ -30,32 +30,44 @@ export const profile = {
 
 export const workExperiences = [
   {
+    company: 'FullStack Labs',
+    role: 'Senior Software Engineer',
+    period: 'Jun 2022 – to date',
+    tasks: [
+      'Worked with Node.js, TypeScript, NestJS, MikroORM, MySQL, AWS, OpenAPI, Java and JSP',
+      'Worked closely with U.S. clients and globally distributed teams',
+      'Contributed to the design and implementation of a new payment microservice with multiple payment gateways integrations',
+      'Enhanced existing microservices related to ticketing and events',
+      'Applied A.I. tools to optimize the software development process',
+    ],
+  },
+  {
     company: 'Fonseca LTDA',
-    role: 'Software Engineer',
+    role: 'Software Architect',
     period: 'Feb 2018 – to date',
     tasks: [
       'Worked with Vue 2 & 3, Node.js, MongoDB, TypeScript, SQL, Docker, TDD (Jest), Cypress and Python',
-      'Built new single-page and mobile applications to support Financial and Supply Chain Management processes',
-      'Worked with mining and plot libraries to bring valuable product and customer insights',
-      'Deployed several applications to the cloud using AWS services',
-      'Built CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront to improve the software development cycle',
+      'Developed new single-page and mobile applications to streamline Financial and Supply Chain Management processes',
+      'Utilized mining and plot libraries to extract valuable product and customer insights',
+      'Deployed multiple applications to the cloud using AWS services',
+      'Implemented CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront to enhance the software development cycle',
     ],
   },
   {
     company: 'CIGAM',
-    role: 'Software Engineer',
+    role: 'Mid-Level Software Engineer',
     period: 'May 2013 – Feb 2018',
     tasks: [
       'Worked with SQL, PL-SQL, T-SQL, HTML, CSS, JavaScript and Agile',
-      'Built new Supply Chain Management applications using Agile techniques',
-      'Worked closely with support teams to resolve critical customer issues',
-      'Presented internal lectures on SQL optimization techniques',
-      'Refactored a huge legacy codebase to improve code quality and performance',
+      'Developed new Supply Chain Management applications using Agile methodologies',
+      'Collaborated closely with support teams to address critical customer issues promptly',
+      'Conducted internal lectures on SQL optimization techniques to enhance team knowledge',
+      'Refactored a large legacy codebase to enhance code quality and performance',
     ],
   },
   {
     company: 'SUNSOFT',
-    role: 'Software Engineer',
+    role: 'Junior Software Engineer',
     period: 'Mar 2011 – Apr 2013',
     tasks: [
       'Worked with Delphi, PostgreSQL and Firebird',
@@ -69,29 +81,12 @@ export const traditionalCourses = [
     name: 'System Analysis and Development',
     institution: 'UNISINOS',
     period: '2016 – 2019',
-    tasks: [
-      'Approved with praise and distinction',
-      'Learned how to optimize the software development process',
-      'Teamed up with four colleagues to develop a process management system for a local school',
-    ],
-  },
-  {
-    name: 'BSc Computer Science',
-    institution: 'UNISINOS',
-    period: '2011 – 2013 (uncompleted)',
-    tasks: [
-      'Introduced to Data Structures & Algorithms and their respective tradeoffs',
-      /* 'Learned asymptotic notation and how to describe algorithms time and space complexity with it', */
-    ],
+    tasks: ['Graduated with honors and distinction'],
   },
   {
     name: 'IT Technician',
     institution: 'IEI',
     period: '2009 – 2011',
-    tasks: [
-      /* 'Learned the basics of computer architecture and software development', */
-      'Felt in love with software development',
-    ],
   },
 ]
 
@@ -102,6 +97,7 @@ export const skills = [
                   I'm still working with today.`,
     topics: [
       'JavaScript',
+      'TypeScript',
       'Vue',
       'Node.js',
       'Express',
@@ -140,7 +136,6 @@ export const skills = [
       'Machine Learning',
       'Java',
       'Clojure',
-      'Datomic',
     ],
   },
 ]
@@ -156,7 +151,7 @@ export const sideProjects = [
   {
     name: 'Olaria',
     description: 'Fish-farming stock management application.',
-    techs: ['TypeScript', 'MySQL', 'Vue 3'],
+    techs: ['TypeScript', 'MySQL', 'Prisma', 'Vue 3'],
     sourceUrl: 'https://github.com/gmtfonseca/olaria',
     demoUrl: '',
   },
@@ -196,9 +191,4 @@ export const onlineCourses = [
     institution: 'Microsoft',
     url: 'https://learning.edx.org/course/course-v1:Microsoft+DAT256x+1T2019a/home',
   },
-  /* {
-    course: 'Build a Modern Computer from First Principles',
-    institution: 'Hebrew University of Jerusalem',
-    url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
-  }, */
 ]

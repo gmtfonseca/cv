@@ -1,7 +1,7 @@
 <template>
   <div class="grid items-center gap-10 grid-cols-profile">
     <div>
-      <img class="rounded-full shadow grayscale" src="@/assets/profile.jpeg" />
+      <img class="rounded-full shadow grayscale" src="@/assets/profile.jpg" />
     </div>
 
     <div class="flex flex-col justify-center gap-4">
