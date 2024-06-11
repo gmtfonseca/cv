@@ -5,7 +5,7 @@ export const profile = {
         self-discipline needed to succeed in any work environment.        
         Please don't hesitate to reach out to me through any of the social media platforms listed below.`,
   phone: '+55 (51) 997339260',
-  email: 'gmtfonseca@gmail.com',
+  email: 'gustavofonseca94@gmail.com',
   socials: [
     {
       name: 'LinkedIn',
