@@ -190,9 +190,4 @@ export const onlineCourses = [
     institution: 'Harvard University',
     url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
   },
-  {
-    course: 'Essential Math for Machine Learning',
-    institution: 'Microsoft',
-    url: 'https://learning.edx.org/course/course-v1:Microsoft+DAT256x+1T2019a/home',
-  },
 ]
