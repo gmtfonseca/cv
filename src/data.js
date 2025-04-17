@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Gustavo Fonseca_',
-  bio: `I have a deep passion for coding, and I consider myself fortunate to have pursued it professionally for over 13 years.
+  bio: `I have a deep passion for coding, and I consider myself fortunate to have pursued it professionally for over 14 years.
         My background encompasses both independent and team-based projects, providing me with the collaborative spirit and strong
         self-discipline needed to succeed in any work environment.        
         Please don't hesitate to reach out to me through any of the social media platforms listed below.`,
@@ -44,7 +44,7 @@ export const workExperiences = [
   {
     company: 'Fonseca LTDA',
     role: 'Software Architect',
-    period: 'Feb 2018 – to date',
+    period: 'Feb 2018 – Jun 2022',
     tasks: [
       'Worked with Vue 2 & 3, Node.js, MongoDB, TypeScript, SQL, Docker, TDD (Jest), Cypress and Python',
       'Developed new single-page and mobile applications to streamline Financial and Supply Chain Management processes',
@@ -116,7 +116,7 @@ export const skills = [
       'Docker',
       'MongoDB',
       'TypeScript',
-      'AWS (S3, Serverless, EC2)',
+      'AWS (S3, Lambda, EC2)',
       'SCSS',
       'Prisma',
       'TailwindCSS',
@@ -135,7 +135,6 @@ export const skills = [
       'Android SDK',
       'Machine Learning',
       'Java',
-      'Clojure',
     ],
   },
 ]
@@ -170,6 +169,11 @@ export const onlineCourses = [
     course: 'Amazon Web Services Developer - Associate',
     institution: 'AWS',
     url: 'https://aws.amazon.com/certification/certified-developer-associate/',
+  },
+  {
+    course: 'OWASP Web Security',
+    institution: 'OWASP',
+    url: 'https://owasp.org/',
   },
   {
     course: 'Machine Learning',
