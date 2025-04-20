@@ -1,9 +1,8 @@
 export const profile = {
   name: 'Gustavo Fonseca_',
-  bio: `I have a deep passion for coding, and I consider myself fortunate to have pursued it professionally for over 14 years.
-        My background encompasses both independent and team-based projects, providing me with the collaborative spirit and strong
-        self-discipline needed to succeed in any work environment.        
-        Please don't hesitate to reach out to me through any of the social media platforms listed below.`,
+  bio: `I'm a software engineer with 14+ years of experience in full-stack development, cloud infrastructure, and microservices — especially with AWS.
+        I enjoy working both independently and with teams, and I try to bring a thoughtful, disciplined approach to every project.
+        I care a lot about writing clean, reliable code and building software that's actually useful.`,
   phone: '+55 (51) 997339260',
   email: 'gustavofonseca94@gmail.com',
   socials: [
@@ -34,11 +33,12 @@ export const workExperiences = [
     role: 'Senior Software Engineer',
     period: 'Jun 2022 – to date',
     tasks: [
-      'Worked with Node.js, TypeScript, NestJS, MikroORM, MySQL, AWS, OpenAPI, Java and JSP',
-      'Worked closely with U.S. clients and globally distributed teams',
-      'Contributed to the design and implementation of a new payment microservice with multiple payment gateways integrations',
-      'Enhanced existing microservices related to ticketing and events',
-      'Applied A.I. tools to optimize the software development process',
+      'Developed microservices using Node.js, TypeScript, and NestJS, enhancing system scalability',
+      'Collaborated with U.S. clients and globally distributed teams to deliver high-quality solutions',
+      'Designed and implemented a payment microservice with multiple payment gateway integrations',
+      'Enhanced existing microservices for ticketing and events, improving system reliability',
+      'Monitored applications for performance issues and system problems',
+      'Utilized A.I. tools to optimize the software development process',
     ],
   },
   {
@@ -46,11 +46,11 @@ export const workExperiences = [
     role: 'Software Architect',
     period: 'Feb 2018 – Jun 2022',
     tasks: [
-      'Worked with Vue 2 & 3, Node.js, MongoDB, TypeScript, SQL, Docker, TDD (Jest), Cypress and Python',
-      'Developed new single-page and mobile applications to streamline Financial and Supply Chain Management processes',
-      'Utilized mining and plot libraries to extract valuable product and customer insights',
-      'Deployed multiple applications to the cloud using AWS services',
-      'Implemented CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront to enhance the software development cycle',
+      'Implemented CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront',
+      'Deployed applications to the cloud using AWS services, ensuring scalability and security',
+      'Developed modern web applications using Vue.js, Node.js, and MongoDB',
+      'Streamlined Financial and Supply Chain Management processes through innovative solutions',
+      'Extracted valuable insights using data mining and visualization tools',
     ],
   },
   {
@@ -93,48 +93,43 @@ export const traditionalCourses = [
 export const skills = [
   {
     level: 'Proficient',
-    description: `Technologies I've worked with extensively and
-                  I'm still working with today.`,
+    description: 'Core technologies and frameworks I use daily in my work.',
     topics: [
-      'JavaScript',
-      'TypeScript',
-      'Vue',
-      'Node.js',
-      'Express',
-      'SQL',
-      'HTML',
-      'REST',
-      'CSS',
-      'Git',
+      'JavaScript/TypeScript',
+      'Node.js & Express',
+      'SQL Databases (MySQL, PostgreSQL)',
+      'RESTful APIs',
+      'NestJS',
+      'HTML/CSS',
+      'Git & Version Control',
     ],
   },
   {
     level: 'Good',
-    description: `Technologies I'm currently working with,
-                  but I don't feel proficient yet.`,
+    description:
+      'Technologies I actively work with and continue to develop expertise in.',
     topics: [
-      'Docker',
-      'MongoDB',
-      'AWS (S3, Lambda, EC2)',
-      'SCSS',
-      'Prisma',
-      'TailwindCSS',
-      'GitHub Actions',
-      'Snowflake',
-      'Kafka',
+      'AWS Services (S3, Lambda, EC2, CloudFront)',
+      'Docker & Containerization',
+      'GraphQL',
+      'CI/CD (GitHub Actions)',
+      'Data Processing (Kafka, Snowflake)',
+      'Modern CSS (SCSS, TailwindCSS)',
+      'ORM (Prisma, MikroORM)',
+      'Vue.js',
     ],
   },
   {
-    level: 'Average',
-    description: `Technologies I've worked with in the past,
-                  but ended up losing competence.`,
+    level: 'Familiar',
+    description:
+      "Technologies I've worked with and can quickly adapt to when needed.",
     topics: [
+      'MongoDB',
       'Python',
-      'T-SQL',
-      'PL/SQL',
-      'Electron',
-      'Android SDK',
-      'Machine Learning',
+      'Enterprise Database Programming (T-SQL, PL/SQL)',
+      'Desktop Development (Electron)',
+      'Mobile Development (Android SDK)',
+      'Data Analysis & Visualization',
       'Java',
     ],
   },
@@ -142,10 +137,11 @@ export const skills = [
 
 export const sideProjects = [
   {
-    name: 'Quantifico',
-    description: 'Mobile and Web app that provides valuable insights on sales.',
-    techs: ['JavaScript', 'Flutter', 'Python 3', 'MongoDB'],
-    sourceUrl: 'https://github.com/gmtfonseca/quantifico',
+    name: 'Serverless Email Sender',
+    description:
+      'Serverless and scalable backend designed to securely send emails with a custom template.',
+    techs: ['Node.js', 'TypeScript', 'AWS'],
+    sourceUrl: 'https://github.com/gmtfonseca/serverless-email-sender',
     demoUrl: '',
   },
   {
@@ -156,11 +152,10 @@ export const sideProjects = [
     demoUrl: '',
   },
   {
-    name: 'Serverless Email Sender',
-    description:
-      'Serverless and scalable backend designed to securely send emails with a custom template.',
-    techs: ['Node.js', 'TypeScript', 'AWS'],
-    sourceUrl: 'https://github.com/gmtfonseca/serverless-email-sender',
+    name: 'Quantifico',
+    description: 'Mobile and Web app that provides valuable insights on sales.',
+    techs: ['JavaScript', 'Flutter', 'Python 3', 'MongoDB'],
+    sourceUrl: 'https://github.com/gmtfonseca/quantifico',
     demoUrl: '',
   },
 ]
@@ -185,10 +180,5 @@ export const onlineCourses = [
     course: 'AI & Machine Learning',
     institution: 'AppliedAI',
     url: 'https://appliedaicourse.com/',
-  },
-  {
-    course: 'CS50: Introduction to Computer Science',
-    institution: 'Harvard University',
-    url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
   },
 ]
