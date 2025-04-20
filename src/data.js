@@ -115,12 +115,13 @@ export const skills = [
     topics: [
       'Docker',
       'MongoDB',
-      'TypeScript',
       'AWS (S3, Lambda, EC2)',
       'SCSS',
       'Prisma',
       'TailwindCSS',
       'GitHub Actions',
+      'Snowflake',
+      'Kafka',
     ],
   },
   {
