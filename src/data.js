@@ -5,6 +5,7 @@ export const profile = {
         I care a lot about writing clean, reliable code and building software that's actually useful.`,
   phone: '+55 (51) 997339260',
   email: 'gustavofonseca94@gmail.com',
+  footerText: 'Made with Vue & TailwindCSS',
   socials: [
     {
       name: 'LinkedIn',
@@ -33,7 +34,7 @@ export const workExperiences = [
     role: 'Senior Software Engineer',
     period: 'Jun 2022 – to date',
     tasks: [
-      'Developed microservices using Node.js, TypeScript, and NestJS, enhancing system scalability',
+      'Developed microservices using Node, TypeScript, and NestJS, enhancing system scalability',
       'Collaborated with U.S. clients and globally distributed teams to deliver high-quality solutions',
       'Designed and implemented a payment microservice with multiple payment gateway integrations',
       'Enhanced existing microservices for ticketing and events, improving system reliability',
@@ -48,7 +49,7 @@ export const workExperiences = [
     tasks: [
       'Implemented CI/CD pipelines with GitHub Actions and AWS S3 & CloudFront',
       'Deployed applications to the cloud using AWS services, ensuring scalability and security',
-      'Developed modern web applications using Vue.js, Node.js, and MongoDB',
+      'Developed modern web applications using Vue, Node, and MongoDB',
       'Streamlined Financial and Supply Chain Management processes through innovative solutions',
       'Extracted valuable insights using data mining and visualization tools',
     ],
@@ -96,7 +97,7 @@ export const skills = [
     description: 'Core technologies and frameworks I use daily in my work.',
     topics: [
       'JavaScript/TypeScript',
-      'Node.js & Express',
+      'Node & Express',
       'SQL Databases (MySQL, PostgreSQL)',
       'RESTful APIs',
       'NestJS',
@@ -116,7 +117,7 @@ export const skills = [
       'Data Processing (Kafka, Snowflake)',
       'Modern CSS (SCSS, TailwindCSS)',
       'ORM (Prisma, MikroORM)',
-      'Vue.js',
+      'Vue',
     ],
   },
   {
@@ -141,7 +142,7 @@ export const sideProjects = [
     name: 'Serverless Email Sender',
     description:
       'Serverless and scalable backend designed to securely send emails with a custom template.',
-    techs: ['Node.js', 'TypeScript', 'AWS'],
+    techs: ['Node', 'TypeScript', 'AWS'],
     sourceUrl: 'https://github.com/gmtfonseca/serverless-email-sender',
     demoUrl: '',
   },
