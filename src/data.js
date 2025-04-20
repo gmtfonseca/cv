@@ -131,6 +131,7 @@ export const skills = [
       'Mobile Development (Android SDK)',
       'Data Analysis & Visualization',
       'Java',
+      'Flutter',
     ],
   },
 ]
